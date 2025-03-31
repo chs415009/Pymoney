@@ -1,9 +1,9 @@
-# PyMoney: Personal Finance Management Tool
+# Pymoney: Personal Finance Management Tool
 
 ![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![Project](https://img.shields.io/badge/Project-Academic-green.svg)
 
-**PyMoney** is a command-line personal finance management application developed as an academic project in Python. This application demonstrates fundamental programming concepts including data structures, file handling, and command-line interface design.
+**Pymoney** is a command-line personal finance management application developed as an academic project in Python. This application demonstrates fundamental programming concepts including data structures, file handling, and command-line interface design.
 
 ## 🌟 Features
 
@@ -28,7 +28,7 @@
 ## 🚀 Usage Guide
 
 ### First-time Setup
-When launching PyMoney for the first time, you'll be prompted to enter your initial balance:
+When launching Pymoney for the first time, you'll be prompted to enter your initial balance:
 
 ```
 How much money do you have? 1000
@@ -50,7 +50,7 @@ If you enter an invalid value, the system will default to 0.
 ## 📖 Detailed Usage Instructions
 
 ### Category Management
-PyMoney uses a hierarchical category system to help organize your finances. View the built-in categories:
+Pymoney uses a hierarchical category system to help organize your finances. View the built-in categories:
 
 ```
 > view categories
@@ -142,4 +142,4 @@ This project was developed as part of a Python Programming course. The assignmen
 
 ---
 
-**PyMoney** - A Python academic project demonstrating fundamental programming concepts through practical application.
+**Pymoney** - A Python academic project demonstrating fundamental programming concepts through practical application.
