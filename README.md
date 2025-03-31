@@ -1,110 +1,150 @@
-# ~ Pymoney ~
-An account book application written in Python.
+# PyMoney: Personal Finance Management Tool
 
-# Download:
-1. Click below ! <br>
-https://github.com/chs415009/Pymoney/blob/main/Pymoney.py
+![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-2. Copy the code to execute it in any environment for Python.
+**PyMoney** is a lightweight, command-line personal finance management application written in Python. It provides a simple yet powerful way to track your expenses, categorize transactions, and manage your budget effectively.
 
-# Instructions:
-This program utilizes a simple command-line interface to interact with the user. <br>
-It allows you to input records, categorize them, and perform various actions on your financial data.<br>
+## 🌟 Features
 
-## -- Initial Setup --
-__1.__ <br>
-<img src="./readme pics/0 input money.png" width="800">
+- **Simple CLI Interface**: Easy-to-use command line interface for quick interaction
+- **Transaction Management**: Add, view, and delete financial transactions
+- **Category System**: Hierarchical category structure for detailed expense tracking
+- **Search Functionality**: Find transactions by category or other criteria
+- **Data Persistence**: Automatic saving of transaction data between sessions
+- **User-friendly Validation**: Robust error handling with clear user feedback
 
-* When you first start the program, you can input the amount of money you already have.<br>
-* You can also input a negative number.
-<br>
+## 📥 Installation
 
-__2.__ <br>
-<img src="./readme pics/1 input money X.png" width="800">
+### Option 1: Direct Download
+1. Download the script directly from:
+   ```
+   https://github.com/chs415009/Pymoney/blob/main/Pymoney.py
+   ```
+2. No additional dependencies required - just pure Python!
 
-* If you input an invalid value, such as "a","@"..., the initial money will be set to 0.
-<br>
+### Option 2: Clone Repository
+```bash
+git clone https://github.com/chs415009/Pymoney.git
+cd Pymoney
+python Pymoney.py
+```
 
-__3.__ <br>
-<img src="./readme pics/2 command X.png" width="800">
+## 🚀 Quick Start Guide
 
-* After you complete the setup, you can start using the application by entering one of the commands shown in the image.<br>
-(add, view, view categories, find, exit)
-<br>
+### First-time Setup
+When launching PyMoney for the first time, you'll be prompted to enter your initial balance:
 
-## -- View Categories --
-__4.__ <br>
-<img src="./readme pics/3 view cat.png" width="800">
+```
+How much money do you have? 1000
+```
 
-* Before recording, you can use "view categories" to see the built-in categories that help identify records you want to add.<br>
-* The hierarchical structure represents different levels of those categories.
-<br>
+If you enter an invalid value, the system will default to 0.
 
-## -- Add --
-__5.__ <br>
-<img src="./readme pics/4 add.png" width="800">
+### Available Commands
 
-* The "add" command must be entered with a specific format (shown in the image).<br>
-* You can add one or multiple records at a time.
-<br>
+| Command | Description | Example |
+|---------|-------------|---------|
+| `add` | Add new transaction(s) | `add 2020-01-01 breakfast -50` |
+| `view` | Display all transactions | `view` |
+| `view categories` | Show category hierarchy | `view categories` |
+| `delete` | Remove a transaction | `delete 3` |
+| `find` | Search by category | `find food` |
+| `exit` | Save and quit application | `exit` |
 
-__6.__ <br>
-<img src="./readme pics/5 add X.png" width="800">
+## 📖 Detailed Usage Instructions
 
-* If you input the wrong format or wrong category, the system will notice you by messages with red background.
-<br>
+### Category Management
+PyMoney uses a hierarchical category system to help organize your finances. View the built-in categories:
 
-## -- View --
-__7.__ <br>
-<img src="./readme pics/6 view.png" width="800">
+```
+> view categories
+```
 
-* The "view" command displays all the details of those records and the total money you have now.
-<br>
+![Category View Example](./readme%20pics/3%20view%20cat.png)
 
-## -- Delete --
-__8.__ <br>
-<img src="./readme pics/7 delete.png" width="800">
+### Adding Transactions
+Add transactions using the following format:
+```
+add [date] [description] [amount]
+```
 
-* The "delete" command allows you to remove your previous records.
-* You need to enter the number of the orders shown in "view" to delete the record you want.
-<br>
+For example:
+```
+> add 2023-05-10 lunch -120
+```
 
-__9.__ <br>
-<img src="./readme pics/8 delete X.png" width="800">
+Add multiple transactions at once:
+```
+> add 2023-05-10 lunch -120 2023-05-10 transportation -30
+```
 
-* If you enter the number out of the "view" list or not a number, the system will notice you by messages with red background.
-<br>
+![Add Transaction Example](./readme%20pics/4%20add.png)
 
-## -- Find --
-__10.__ <br>
-<img src="./readme pics/9 find.png" width="800">
+### Viewing Transactions
+Display all recorded transactions and current balance:
+```
+> view
+```
 
-* The "find" command allows you to view records in specific categories.
-* For example, if you enter "food", the result will include all the categories under the level of "food" (meal, snack, drink).
-<br>
+![View Transactions Example](./readme%20pics/6%20view.png)
 
-__11.__ <br>
-<img src="./readme pics/10 find X.png" width="800">
+### Deleting Transactions
+Remove a transaction by referencing its index number:
+```
+> delete 2
+```
 
-* If there are no records in specific categories, it'll show nothing.
-* The reult of "find" will also be empty if you don't input the correct category. 
-<br>
+The index numbers are displayed when using the `view` command.
 
-## -- Exit --
-__12.__ <br>
-<img src="./readme pics/11 exit.png" width="800">
+![Delete Transaction Example](./readme%20pics/7%20delete.png)
 
-* The "exit" function is used when you want to save records and close the application.
-* To notice, if you don't leave with "exit", the modification won't be saved.
-<br>
+### Finding Transactions
+Search for transactions by category:
+```
+> find food
+```
 
-__13.__ <br>
-<img src="./readme pics/12 exit back.png" width="800">
+This will display all transactions under the specified category, including its subcategories.
 
-* After the previous "exit", the next time you start will skip setting the initial money with the message "Welcome back!" shown.
-<br>
+![Find Transactions Example](./readme%20pics/9%20find.png)
 
-__14.__ <br>
-<img src="./readme pics/13 txt.png" width="800">
+### Exiting the Application
+To save your changes and exit:
+```
+> exit
+```
 
-* This image shows the text file for storing the data of those records. 
+**Important**: Changes are only saved when exiting through this command.
+
+## 🔧 Technical Implementation
+
+- **Data Storage**: Transaction data is stored in a plaintext file for easy access and portability
+- **Error Handling**: Comprehensive input validation with user-friendly error messages
+- **Category Structure**: Intelligent hierarchical category implementation
+
+## 🛠️ Future Development Plans
+
+- Data visualization for expense analysis
+- Budget setting and tracking
+- Import/export functionality for CSV files
+- Multi-account support
+- Financial goal tracking
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👨‍💻 About the Developer
+
+PyMoney was developed as a demonstration of Python programming skills and software architecture design. The application showcases:
+
+- Clean code organization
+- Object-oriented design principles
+- Effective error handling
+- User experience considerations
+- Data persistence implementation
+
+---
+
+**PyMoney** - Simplifying personal finance management through elegant code and practical functionality.
