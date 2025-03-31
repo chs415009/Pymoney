@@ -1,5 +1,5 @@
 # ~ Pymoney ~
-The account book written in Python.
+An account book application written in Python.
 
 # Download:
 1. Click below ! <br>
@@ -15,7 +15,7 @@ It allows you to input records, categorize them, and perform various actions on 
 __1.__ <br>
 <img src="./readme pics/0 input money.png" width="800">
 
-* When you first start the program, you can input the money you have already.<br>
+* When you first start the program, you can input the amount of money you already have.<br>
 * You can also input a negative number.
 <br>
 
@@ -28,7 +28,7 @@ __2.__ <br>
 __3.__ <br>
 <img src="./readme pics/2 command X.png" width="800">
 
-* After you finish setting, you can start using it by entering the function shown in the image.<br>
+* After you complete the setup, you can start using the application by entering one of the commands shown in the image.<br>
 (add, view, view categories, find, exit)
 <br>
 
@@ -36,16 +36,16 @@ __3.__ <br>
 __4.__ <br>
 <img src="./readme pics/3 view cat.png" width="800">
 
-* Before recording, you can use "view categories" to see the built-in categories that helps identify records you want to add.<br>
-* The stairs-like structure means different levels of those categories.
+* Before recording, you can use "view categories" to see the built-in categories that help identify records you want to add.<br>
+* The hierarchical structure represents different levels of those categories.
 <br>
 
 ## -- Add --
 __5.__ <br>
 <img src="./readme pics/4 add.png" width="800">
 
-* The "add" functions must input with a regular format (shown in the image).<br>
-* You can add one or also more records at a time.
+* The "add" command must be entered with a specific format (shown in the image).<br>
+* You can add one or multiple records at a time.
 <br>
 
 __6.__ <br>
@@ -58,15 +58,15 @@ __6.__ <br>
 __7.__ <br>
 <img src="./readme pics/6 view.png" width="800">
 
-* The "view" function can show all the details of those records and the total money you have now.
+* The "view" command displays all the details of those records and the total money you have now.
 <br>
 
 ## -- Delete --
 __8.__ <br>
 <img src="./readme pics/7 delete.png" width="800">
 
-* The "delete" function allows you to delete your previous records.
-* You will have to enter the number of the orders shown in "view" to delete the record you want.
+* The "delete" command allows you to remove your previous records.
+* You need to enter the number of the orders shown in "view" to delete the record you want.
 <br>
 
 __9.__ <br>
@@ -79,14 +79,14 @@ __9.__ <br>
 __10.__ <br>
 <img src="./readme pics/9 find.png" width="800">
 
-* The "find" fuction allows you to view records in specific categories.
+* The "find" command allows you to view records in specific categories.
 * For example, if you enter "food", the result will include all the categories under the level of "food" (meal, snack, drink).
 <br>
 
 __11.__ <br>
 <img src="./readme pics/10 find X.png" width="800">
 
-* If thers's no records in specific categories, it'll show nothing.
+* If there are no records in specific categories, it'll show nothing.
 * The reult of "find" will also be empty if you don't input the correct category. 
 <br>
 
@@ -94,7 +94,7 @@ __11.__ <br>
 __12.__ <br>
 <img src="./readme pics/11 exit.png" width="800">
 
-* The "exit" function is used when you want to save records and leave.
+* The "exit" function is used when you want to save records and close the application.
 * To notice, if you don't leave with "exit", the modification won't be saved.
 <br>
 
@@ -107,4 +107,4 @@ __13.__ <br>
 __14.__ <br>
 <img src="./readme pics/13 txt.png" width="800">
 
-* This image shows the txt file for saving the data of those records. 
+* This image shows the text file for storing the data of those records. 
