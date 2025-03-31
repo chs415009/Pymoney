@@ -1,36 +1,31 @@
 # PyMoney: Personal Finance Management Tool
 
 ![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Project](https://img.shields.io/badge/Project-Academic-green.svg)
 
-**PyMoney** is a lightweight, command-line personal finance management application written in Python. It provides a simple yet powerful way to track your expenses, categorize transactions, and manage your budget effectively.
+**PyMoney** is a command-line personal finance management application developed as an academic project in Python. This application demonstrates fundamental programming concepts including data structures, file handling, and command-line interface design.
 
 ## 🌟 Features
 
-- **Simple CLI Interface**: Easy-to-use command line interface for quick interaction
+- **Command-line Interface**: Demonstrates text-based user interaction
 - **Transaction Management**: Add, view, and delete financial transactions
-- **Category System**: Hierarchical category structure for detailed expense tracking
-- **Search Functionality**: Find transactions by category or other criteria
-- **Data Persistence**: Automatic saving of transaction data between sessions
-- **User-friendly Validation**: Robust error handling with clear user feedback
+- **Category System**: Hierarchical category structure for expense organization
+- **Search Functionality**: Filter transactions by category
+- **Data Persistence**: File I/O operations for saving and loading data
+- **Error Handling**: Input validation with user feedback
 
-## 📥 Installation
+## 📥 How to Run
 
-### Option 1: Direct Download
-1. Download the script directly from:
+1. Download the script from:
    ```
    https://github.com/chs415009/Pymoney/blob/main/Pymoney.py
    ```
-2. No additional dependencies required - just pure Python!
+2. Run in any Python environment (version 3.6 or higher)
+   ```
+   python Pymoney.py
+   ```
 
-### Option 2: Clone Repository
-```bash
-git clone https://github.com/chs415009/Pymoney.git
-cd Pymoney
-python Pymoney.py
-```
-
-## 🚀 Quick Start Guide
+## 🚀 Usage Guide
 
 ### First-time Setup
 When launching PyMoney for the first time, you'll be prompted to enter your initial balance:
@@ -119,32 +114,32 @@ To save your changes and exit:
 
 ## 🔧 Technical Implementation
 
-- **Data Storage**: Transaction data is stored in a plaintext file for easy access and portability
-- **Error Handling**: Comprehensive input validation with user-friendly error messages
-- **Category Structure**: Intelligent hierarchical category implementation
+- **Data Structures**: Uses lists and dictionaries to organize financial data
+- **File I/O**: Implements text file reading/writing for data persistence
+- **String Parsing**: Demonstrates input parsing and validation
+- **Error Handling**: Shows techniques for graceful error management
 
-## 🛠️ Future Development Plans
+## 🎓 Learning Outcomes
+
+This academic project demonstrates proficiency in:
+
+- Python programming fundamentals
+- Command-line application development
+- File handling and data persistence
+- Input validation and error handling
+- Data organization and retrieval techniques
+
+## 📚 Academic Context
+
+This project was developed as part of a Python Programming course. The assignment focused on applying programming concepts to create a practical utility application with data persistence capabilities.
+
+## 🔄 Potential Extensions
 
 - Data visualization for expense analysis
-- Budget setting and tracking
-- Import/export functionality for CSV files
-- Multi-account support
-- Financial goal tracking
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👨‍💻 About the Developer
-
-PyMoney was developed as a demonstration of Python programming skills and software architecture design. The application showcases:
-
-- Clean code organization
-- Object-oriented design principles
-- Effective error handling
-- User experience considerations
-- Data persistence implementation
+- Budget setting functionality
+- Statistical analysis of spending patterns
+- Enhanced reporting capabilities
 
 ---
 
-**PyMoney** - Simplifying personal finance management through elegant code and practical functionality.
+**PyMoney** - A Python academic project demonstrating fundamental programming concepts through practical application.
