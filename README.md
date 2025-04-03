@@ -3,24 +3,24 @@
 ![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![Project](https://img.shields.io/badge/Project-Academic-green.svg)
 
-**Pymoney** is a command-line personal finance management application developed as an academic project in Python. This application demonstrates fundamental programming concepts including data structures, file handling, and command-line interface design.
+**Pymoney** is a command-line personal finance management application developed as an academic project in Python. This tool helps users track expenses, categorize transactions, and monitor their financial status with a simple yet powerful interface.
 
 ## 🌟 Features
 
-- **Command-line Interface**: Demonstrates text-based user interaction
+- **Command-line Interface**: Intuitive text-based user interaction
 - **Transaction Management**: Add, view, and delete financial transactions
-- **Category System**: Hierarchical category structure for expense organization
-- **Search Functionality**: Filter transactions by category
-- **Data Persistence**: File I/O operations for saving and loading data
-- **Error Handling**: Input validation with user feedback
+- **Hierarchical Category System**: Organize expenses with nested categories
+- **Advanced Search**: Filter transactions by category and subcategories
+- **Data Persistence**: Automatic saving and loading of user data
+- **Error Handling**: Robust input validation with helpful feedback
 
-## 📥 How to Run
+## 📥 Installation
 
-1. Download the script from:
+1. Download the script:
    ```
    https://github.com/chs415009/Pymoney/blob/main/Pymoney.py
    ```
-2. Run in any Python environment (version 3.6 or higher)
+2. Run in any Python environment (version 3.6 or higher):
    ```
    python Pymoney.py
    ```
@@ -34,23 +34,21 @@ When launching Pymoney for the first time, you'll be prompted to enter your init
 How much money do you have? 1000
 ```
 
-If you enter an invalid value, the system will default to 0.
-
 ### Available Commands
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `add` | Add new transaction(s) | `add 2020-01-01 breakfast -50` |
+| `add` | Add new transaction(s) | `add food meal breakfast -50` |
 | `view` | Display all transactions | `view` |
 | `view categories` | Show category hierarchy | `view categories` |
 | `delete` | Remove a transaction | `delete 3` |
 | `find` | Search by category | `find food` |
 | `exit` | Save and quit application | `exit` |
 
-## 📖 Detailed Usage Instructions
+## 📖 Detailed Usage with Examples
 
 ### Category Management
-Pymoney uses a hierarchical category system to help organize your finances. View the built-in categories:
+View the built-in category hierarchy:
 
 ```
 > view categories
@@ -61,17 +59,17 @@ Pymoney uses a hierarchical category system to help organize your finances. View
 ### Adding Transactions
 Add transactions using the following format:
 ```
-add [date] [description] [amount]
+add [category] [description] [amount]
 ```
 
 For example:
 ```
-> add 2023-05-10 lunch -120
+> add food meal lunch -120
 ```
 
 Add multiple transactions at once:
 ```
-> add 2023-05-10 lunch -120 2023-05-10 transportation -30
+> add food meal lunch -120, transportation bus fare -30
 ```
 
 ![Add Transaction Example](./readme%20pics/4%20add.png)
@@ -114,32 +112,30 @@ To save your changes and exit:
 
 ## 🔧 Technical Implementation
 
-- **Data Structures**: Uses lists and dictionaries to organize financial data
-- **File I/O**: Implements text file reading/writing for data persistence
-- **String Parsing**: Demonstrates input parsing and validation
-- **Error Handling**: Shows techniques for graceful error management
+- **Object-Oriented Design**: Uses classes (Record, Records, Categories) for data management
+- **Recursive Algorithms**: Implements category hierarchy traversal and filtering
+- **File I/O**: Handles data persistence through structured text files
+- **Error Handling**: Implements comprehensive exception handling
+- **Command Parsing**: Features intuitive command interpretation system
 
 ## 🎓 Learning Outcomes
 
 This academic project demonstrates proficiency in:
 
-- Python programming fundamentals
-- Command-line application development
-- File handling and data persistence
-- Input validation and error handling
-- Data organization and retrieval techniques
+- **Python Programming**: Core language features, data structures, control flow
+- **Object-Oriented Programming**: Classes, encapsulation, properties
+- **File Handling**: Data persistence, text file operations
+- **User Interface Design**: Command-line interface, user experience
+- **Input Validation**: Error checking, exception handling, feedback systems
 
-## 📚 Academic Context
-
-This project was developed as part of a Python Programming course. The assignment focused on applying programming concepts to create a practical utility application with data persistence capabilities.
-
-## 🔄 Potential Extensions
+## 🚀 Potential Extensions
 
 - Data visualization for expense analysis
 - Budget setting functionality
 - Statistical analysis of spending patterns
-- Enhanced reporting capabilities
+- GUI development
+- Export to CSV/Excel
 
 ---
 
-**Pymoney** - A Python academic project demonstrating fundamental programming concepts through practical application.
+**Pymoney** - A Python academic project demonstrating fundamental programming concepts through a practical financial management application.
